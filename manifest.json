@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Add X-Forwarded-For Header with Random IP",
+    "version": "1.0",
+    "description": "Adds a random IP address to the X-Forwarded-For header of all HTTP requests",
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
